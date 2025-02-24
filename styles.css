@@ -1,0 +1,248 @@
+/* التأثيرات العامة */
+body {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* الهيدر */
+header {
+  background: #0099cc;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* القائمة الجانبية للموبايل */
+.mobile-nav {
+  display: none;
+  background: #0099cc;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  padding-top: 60px;
+  text-align: right;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav ul li {
+  padding: 15px;
+}
+
+.mobile-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mobile-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  background: #0099cc;
+  color: white;
+  font-size: 30px;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.menu-toggle:hover {
+  background: #007bb5;
+}
+
+.mobile-nav.active {
+  display: block;
+}
+
+/* قسم المنيو */
+#menu {
+  padding: 40px 0;
+}
+
+.menu-category {
+  margin-bottom: 30px;
+}
+
+.menu-category h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  width: 18%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.menu-item h4 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.menu-item .price {
+  font-size: 18px;
+  color: #ff5722;
+  font-weight: bold;
+}
+
+/* الهيرول */
+.hero {
+  background: #ff9800;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* قسم التواصل */
+#contact {
+  padding: 40px 0;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+#contact p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #0099cc;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* الفوتر */
+footer {
+  background: #0099cc;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* تحسين العرض للموبايل */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin-right: 0;
+    padding: 10px;
+  }
+
+  .menu-item {
+    width: 45%;
+  }
+
+  .mobile-nav ul {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-item {
+    width: 90%;
+    margin-right: 0;
+  }
+
+  .menu-toggle {
+    font-size: 25px;
+  }
+}
+/* إضافة تأثير حركة عند التمرير على العنصر */
+.menu-item {
+  width: 18%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثير الحركة عند التمرير */
+}
+
+/* عندما يتم التمرير على العنصر */
+.menu-item:hover {
+  transform: translateY(-10px); /* تحريك العنصر للأعلى */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* تأثير الظل عند التمرير */
+}

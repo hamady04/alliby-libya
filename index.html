@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الليبي للمأكولات</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- زر القائمة الجانبية للموبايل -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <!-- القائمة الجانبية -->
+  <nav class="mobile-nav" id="mobile-menu">
+    <ul>
+      <li><a href="#home">الرئيسية</a></li>
+      <li><a href="#menu">المنيو</a></li>
+      <li><a href="#contact">التواصل</a></li>
+    </ul>
+  </nav>
+
+  <!-- الهيدر -->
+  <header>
+    <div class="container">
+      <h1>الليبي للمأكولات</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#menu">المنيو</a></li>
+          <li><a href="#contact">التواصل</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- الرئيسية -->
+  <section id="home">
+    <div class="hero">
+      <h2>أهلاً بكم في الليبي للمأكولات</h2>
+      <p>أفضل المأكولات بنكهات أصيلة</p>
+    </div>
+  </section>
+
+  <!-- المنيو -->
+  <section id="menu">
+    <div class="container">
+      <h2>المنيو</h2>
+
+      <!-- السندوتشات -->
+      <div class="menu-category">
+        <h3>السندوتشات</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="zingar.jpg" alt="زنجر">
+            <h4>سندوتش زنجر</h4>
+            <span class="price">15 دينار</span>
+          </div>
+          <div class="menu-item">
+            <img src="twister.jpg" alt="تويستر">
+            <h4>سندوتش تويستر</h4>
+            <span class="price">18 دينار</span>
+          </div>
+          <div class="menu-item">
+            <img src="pane.jpg" alt="بانيه">
+            <h4>سندوتش بانيه</h4>
+            <span class="price">14 دينار</span>
+          </div>
+          <div class="menu-item">
+            <img src="burger.jpg" alt="برجر">
+            <h4>سندوتش برجر لحم</h4>
+            <span class="price">20 دينار</span>
+          </div>
+          <div class="menu-item">
+            <img src="shawerma.jpg" alt="شاورما">
+            <h4>سندوتش شاورما</h4>
+            <span class="price">6 دينار</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- الوجبات -->
+      <div class="menu-category">
+        <h3>الوجبات</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="brosted.jpg" alt="وجبة بروستد">
+            <h4>وجبة بروستد</h4>
+            <span class="price">30 دينار</span>
+          </div>
+          <div class="menu-item">
+            <img src="mix.jpg" alt="وجبة مشاوي">
+            <h4>وجبة مشاوي مشكلة</h4>
+            <span class="price">35 دينار</span>
+          </div>
+          <div class="menu-item">
+            <img src="kebda.jpg" alt="وجبة كبدة">
+            <h4>وجبة كبدة مشوية</h4>
+            <span class="price">25 دينار</span>
+          </div>
+          <div class="menu-item">
+            <img src="kebab.jpg" alt="وجبة كباب">
+            <h4>وجبة كباب لحم</h4>
+            <span class="price">22 دينار</span>
+          </div>
+          <div class="menu-item">
+            <img src="chieken.jpg" alt="وجبة دجاج">
+            <h4>وجبة دجاج مشوي</h4>
+            <span class="price">44 دينار</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- المقبلات -->
+      <div class="menu-category">
+        <h3>المقبلات</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="download.jpg" alt="ارز">
+            <h4>ارز</h4>
+            <span class="price">10 دينار</span>
+          </div>
+          <div class="menu-item">
+            <img src="potato.jpg" alt="بطاطا">
+            <h4>بطاطا مقلية</h4>
+            <span class="price">8 دينار</span>
+          </div>
+          <div class="menu-item">
+            <img src="salad.jpg" alt="سلطة">
+            <h4>سلطة خضراء</h4>
+            <span class="price">12 دينار</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- المشروبات -->
+      <div class="menu-category">
+        <h3>المشروبات</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="orange.jpg" alt="عصير برتقال">
+            <h4>عصير برتقال</h4>
+            <span class="price">10 دينار</span>
+          </div>
+          <div class="menu-item">
+            <img src="tea.jpg" alt="شاي ليبي">
+            <h4>شاي أخضر</h4>
+            <span class="price">5 دينار</span>
+          </div>
+          <div class="menu-item">
+            <img src="pepsi.jpg" alt="ببسي">
+            <h4>ببسي</h4>
+            <span class="price">6 دينار</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- قسم التواصل -->
+  <section id="contact">
+    <div class="container">
+      <h2>اتصل بنا</h2>
+      <p> العنوان: شارع النصر،اجدابيا</p>
+      <p>الهاتف : 0922071633</p>
+      <p>✉️ البريد الإلكتروني: info@allibi-food.com</p>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer>
+    <div class="container">
+      <p>© 2025 جميع الحقوق محفوظة - الليبي للمأكولات</p>
+      <p> اعداد : محمد عبدالباسط احمد</p>
+    </div>
+  </footer>
+
+</body>
+</html>
